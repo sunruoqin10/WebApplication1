@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(msbuild WebApplication1.csproj /t:Clean /p:Configuration=Debug)",
+      "Bash(where msbuild *)",
+      "Read(//c/Program Files/**)",
+      "Bash(mkdir -p WebApplication1/bin/roslyn)",
+      "Bash(cp -r packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1/build/net46/* WebApplication1/bin/roslyn/)",
+      "Bash(mkdir -p \"WebApplication1/bin/roslyn\")",
+      "Bash(cp -r \"packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1/build/net46/\"* \"WebApplication1/bin/roslyn/\")",
+      "Read(//c/c/Users/sunru/source/repos/WebApplication1/WebApplication1/bin/**)",
+      "Bash(cp *)"
+    ]
+  }
+}
